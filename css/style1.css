@@ -1,0 +1,40 @@
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.band {
+			width: 98%;
+			height:100%;
+			display: flex;
+			background-color: white;
+			box-shadow: 0px 0px 10px lightblue;
+			border-radius: 25px;
+            align-items: center;
+            justify-content: center;
+			border-style: inset;
+		}
+		.projects , .java_projects , .python_projects {
+			width: 235px;
+			height:315px;
+			display: inline-block;
+			background-color: skyblue;
+            margin: 50px;
+			box-shadow: 10px 10px 5px lightblue;
+			border-radius: 25px;
+			border-style: inset;
+		}
+		.python_projects:hover, .projects:hover,.java_projects:hover{
+			background-color:lightblue;
+	        box-shadow: 10px 10px 5px skyblue;
+			transform: perspective(10px) rotateX(1deg);
+		}
+		@media screen and (max-width: 500px) {
+
+			.java_projects,
+			.python_projects,
+			.projects {
+				width: 70%;
+			}
+		}
